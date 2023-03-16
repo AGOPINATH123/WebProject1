@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<script type="text/javascript" src="registration.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style type="text/css">
+table td {
+	padding: 5px;
+}
+</style>
+</head>
+<body class="bg-info">
+	<font><center><h1 style="color: black;">Registration form</h1></center>
+		<form action="RegistrationServlet" method="get">
+			<table align="center" cellspacing="20">
+				<tr>
+					<td><span style="color: red;">*</span>EmployeeId:</td>
+					<td><input type="text" name="employeeId"
+						placeholder="employeeid" id="employeeid"
+						onblur="clearErrorMessage()"><br></td>
+					<td><span id="errorMsgEmployeeId" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><span style="color: red;">*</span>EmployeeName:</td>
+					<td><input type="text" name="employeeName"
+						placeholder="employeename" id="employeename"
+						onblur="clearErrorMessage()"><br></td>
+					<td><span id="errorMsgEmployeeName" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><span style="color: red;">*</span>DOB:</td>
+					<td><input type="date" id="employeedob"
+						onblur="clearErrorMessage()"><br></td>
+					<td><span id="errorMsgDOB" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><span style="color: red;">*</span>Designation:</td>
+					<td><select name="Designation" id="employeedesignation"
+						onblur="clearErrorMessage()">
+							<option disabled selected>Select an Option</option>
+							<option value="AssociateEngineer">AssociateEngineer</option>
+							<option value="SoftwareEnineer">SoftwareEngineer</option>
+							<option value="SN SoftwareEngineer">SN SoftwareEngineer</option>
+							<option>Lead</option>
+					</select><br></td>
+					<td><span id="errorMsgDesignation" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><span style="color: red;">*</span>employeeSalary:</td>
+					<td><input type="text" name="employeeSalary"
+						placeholder="currentctc" id="employeeSalary" onblur="clearErrorMessage()"><br></td>
+					<td><span id="errorMsgCurrentCTC" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="Gender" id="Male">Male <input
+						type="radio" name="Gender" id="Female">Female<br></td>
+				</tr>
+				<tr>
+					<td>SkillSet:</td>
+					<td>
+						<form action="/action_page.php">
+							<select name="skillset" multiple>
+								<option value="java">java</option>
+								<option value="devops">devops</option>
+								<option value="AI">AI</option>
+								<option value="dotnet">dotnet</option>
+							</select>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><textarea rows="" cols="" placeholder="Address"
+							id="textarea"></textarea></td>
+				</tr>
+				<tr>
+					<td>employeeMobileno:</td>
+					<td><input type="text" name="employeeMobileno"
+						placeholder="employeeMobileno" id="employeeMobileno"
+						onblur="clearErrorMessage()"><br></td>
+						<td><span id="errorMsgEmployeeMobileno" style="color: red;"></span></td>
+				</tr>
+				<tr>
+				<td><input type="submit" value="submit" class="btn btn-success"
+					onclick="return validcheck()"> <input type="reset"
+					value="cancel" class="btn btn-danger"></td>
+				</tr>
+			</table>
+		</form>
+	</font>
+</body>
+</html>

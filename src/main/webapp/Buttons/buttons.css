@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.Request-button {
+background-color:rgb(0,0,0);
+color:white;
+height:40px;
+width:129px;
+cursor:pointer;
+border: none;
+border-radius: 0px;
+margin-right: 10px;
+font-weight:normal;
+font-size: 15px; 
+transition: 0.15s;
+}
+.Request-button:hover {
+	
+opacity:0.8; 
+}
+
+
+.add-button {
+background-color: gold;
+color:black;
+height: 40px;
+width: 150px;
+border: none;
+border-radius: 20px;
+font-size: 14px;
+font-weight:lighter;
+cursor:pointer;
+transition:background-color 0.15s;
+}
+.add-button:hover {
+background-color: green;
+color: white;
+
+}
+.sign-button{
+background-color:green;
+color:white;
+height:40px;
+width:85px;
+font-weight: bold;
+border:none; 
+border-radius: 5px;
+margin-left:10px;
+cursor:pointer; 
+transition:box-shadow , background-color 0.15s;
+}
+.sign-button:hover{
+box-shadow:5px 5px 10px black;
+background-color :gold;
+color:black; 
+}

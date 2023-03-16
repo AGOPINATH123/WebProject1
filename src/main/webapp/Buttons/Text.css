@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.text {
+font-family :aerial;
+    font-weight: bold;
+    font-size: 18px;
+    width: 280px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+.viewsandyears {
+font-family :aerial;
+  color:7f7f7f;
+  font-size: 16px;
+  margin-top:5px; 
+
+}
+.nameofperson{
+font-family :aerial;
+color :7f7f7f;
+font-size: 16px;
+
+}
+.textcontent {
+font-family :aerial;
+ width: 280px;
+ line-height:24px; 
+}
+.apple-text{
+margin-right :900px;
+margin-top : 100px;
+margin-bottom :20px;
+background-color:rgb(227, 65, 64);
+color : white;
+text-align: left;
+padding-left:6px;
+padding-right:6px;
+padding-top : 5px;
+padding-bottom : 5px;
+}
+ .span1{
+color:white;
+cursor: pointer;
+}
+.span1 :hover {
+text-decoration: underline;
+color: black;
+}
+.anchor1{
+	text-decoration: none;
+	color: white;	
+}
+.anchor1:hover {
+	text-decoration: underline;
+	
+	
+}
+
